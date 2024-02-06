@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">GUIcalculator</string>
+    <string name="app_name">ZipingWangGUIcalculator</string>
     <string name="top">Start typing or enter values to calculate</string>
-
 </resources>

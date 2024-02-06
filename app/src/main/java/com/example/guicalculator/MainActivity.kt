@@ -147,8 +147,17 @@ class MainActivity : AppCompatActivity() {
                 ).show()
             } else {
                 firstNum = textBox.text.toString().toDouble()
-                var ans: Double = sqrt(firstNum)
-                textBox.setText(ans.toString())
+                if (firstNum < 0) {
+                    Toast.makeText(
+                        this,
+                        "YOU CAN NOT SQUARE ROOT A NEGATIVE NUMBER",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+                else {
+                    var ans: Double = sqrt(firstNum)
+                    textBox.setText(ans.toString())
+                }
             }
         }
         equalButton.setOnClickListener { view:View ->
